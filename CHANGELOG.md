@@ -6,6 +6,8 @@ rename `Unreleased` topic with the new version tag. Finally, create a new `Unrel
 
 ## Unreleased
 
+## v6.5.1
+
 ### API: os
 - Add `useTemplateIcon` option to `os.setTray()` for macOS template icon support (adapts to light/dark mode) (#991)
 - Use native `NSUserNotificationCenter` for `os.showNotification()` on macOS App Bundles, with fallback to osascript (#1546)
