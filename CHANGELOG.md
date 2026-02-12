@@ -6,6 +6,20 @@ rename `Unreleased` topic with the new version tag. Finally, create a new `Unrel
 
 ## Unreleased
 
+### API: os
+- Add `useTemplateIcon` option to `os.setTray()` for macOS template icon support (adapts to light/dark mode) (#991)
+- Use native `NSUserNotificationCenter` for `os.showNotification()` on macOS App Bundles, with fallback to osascript (#1546)
+
+### API: window
+- Fix `window.focus()` on macOS to bring the window to front when another app is active (#1548)
+- Fix macOS crash on exit by dispatching `_close` logic on the Main Thread (#1469)
+
+### Core: events
+- Add `windowActivate` event for macOS dock icon click (#1551)
+
+### Core: tray
+- Fix tray library overriding NSApp delegate on macOS (#1551)
+
 ## v6.5.0
 
 ### Core: events
